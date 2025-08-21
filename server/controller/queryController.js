@@ -1,6 +1,8 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { zeroShotPrompt } from "../utils/prompts/zeroShotPrompt.js";
 
+
+
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 export const queryPDF = async (req, res) => {
